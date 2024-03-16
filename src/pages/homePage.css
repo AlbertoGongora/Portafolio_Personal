@@ -1,0 +1,239 @@
+body {
+    background-color: #302d2d;
+    color: #ebece9;
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* Estilos de los TOOLINGS */
+.toolings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.toolings-title {
+    font-size: 32px;
+    
+    align-self: center;
+    margin: 32px;
+    border: 2px solid #87A922;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
+    color: #87A922;
+    text-shadow:  0 0 5px #87A922;
+}
+
+.toolings-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    background-color: #87A922;
+    padding: 24px;
+    margin-bottom: 64px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #87A922;
+}
+
+.toolings-list li {
+    width: 148px;
+    list-style: none;
+    font-size: 16px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    background-color: #302d2d;
+    border-radius: 8px;
+    padding: 8px 12px;
+    box-shadow: 0 0 5px #302d2d;
+
+}
+
+.toolings-list li i {
+    width: 25px;
+    font-size: 20px;
+    margin-left: 6px;
+    color: #87A922;
+}
+
+/* Estilos del SHOWROOM */
+
+.showroom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showroom-title {
+    font-size: 32px;
+    align-self: center;
+    margin: 64px 0 32px 0;
+    border: 2px solid #87A922;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
+    color: #87A922;
+    text-shadow:  0 0 5px #87A922;
+}
+
+.showroom-text {
+    font-size: 16px;
+    margin-bottom: 32px;
+    background-color: #87A922;
+    padding: 12px 8px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #87A922;
+}
+
+.showroom-span:hover {
+    color: #302d2d;
+}
+
+.showroom-button {
+    font-size: 32px;
+    align-self: center;
+    margin-bottom: 64px;
+    padding: 12px 10px;
+    border: 2px solid #87A922;
+    border-radius: 8px;
+
+    color: #87A922;
+    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
+    text-shadow:  0 0 5px #87A922;
+    background-color: #302d2d;
+}
+
+.showroom-button:hover {
+    color: #302d2d;
+    background-color: #87A922;
+}
+
+/* Estilos de descarga de CV */
+
+.download-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-cv-title {
+    font-size: 32px;
+    align-self: center;
+    margin: 64px 0 32px 0;
+    border: 2px solid #87A922;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
+    color: #87A922;
+    text-shadow:  0 0 5px #87A922;
+}
+
+.download-cv-button {
+    text-decoration: none;
+    font-size: 32px;
+    align-self: center;
+    margin-bottom: 32px;
+    padding: 12px 10px;
+    border: 2px solid #87A922;
+    border-radius: 8px;
+
+    color: #87A922;
+    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
+    text-shadow:  0 0 5px #87A922;
+    background-color: #302d2d;
+}
+
+.download-cv-button:hover {
+
+    color: #302d2d;
+    background-color: #87A922;
+}
+
+/* Estilo de la cita */
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    border: 5px solid #87A922;
+    border-radius: 8px;
+    padding: 8px 12px 24px 12px;
+    margin: 96px auto;
+    gap: 12px;
+}
+
+.quote-text {
+    font-size: 24px;
+    margin: 0 4px;
+    font-style: italic;
+    line-height: 1.5;
+
+}
+
+.quote-author {
+    text-align: right;
+}
+
+.arrow-left {
+    color: #87A922;
+    align-self: flex-start;
+    transform: scale(3.5);
+    position: relative;
+    top: -22px;
+    left: 20px;
+}
+
+.arrow-right {
+    color: #87A922;
+    align-self: flex-end;
+    transform: scale(3.5);
+    position: relative;
+    bottom: -38px;
+    right: 24px;
+}
+
+@media screen and (min-width: 600px) {
+    .toolings-list {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .toolings-list li {
+        font-size: 20px;
+        width: 170px;
+    }
+
+    .toolings-list li i {
+        font-size: 24px;
+        margin-right: 8px;
+    }
+
+    .quote-container {
+        width: 590px;
+    }
+}
+
+@media screen and (min-width: 1120px) {
+    .toolings-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .toolings-list li {
+        font-size: 24px;
+        width: 200px;
+    }
+
+    .toolings-list li i {
+        font-size: 32px;
+        margin-right: 8px;
+    }
+}

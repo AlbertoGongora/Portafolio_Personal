@@ -1,0 +1,161 @@
+nav {
+    display: none;
+  }
+  
+  nav.open {
+    display: block;
+    position: absolute;
+    top: 104px;
+    width: 100%;
+    background-color: #302d2d;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 360px);
+  }
+  
+  .menu li {
+    width: 150px;
+    margin: 16px 0;
+    list-style: none;
+    font-size: 36px;
+    text-align: right;
+    font-weight: 600;
+  
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #fff;;
+  }
+  
+  .menu li a:hover {
+    color: #87A922;
+  }
+  
+  .menu li a:hover::before {
+    content: "\2192"; 
+    margin-right: 5px; 
+  }
+  
+
+.menu-links li {
+    list-style: none;
+    height: 64px;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-links li a h3 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-left: 30px;
+}
+
+.menu-links li a i {
+    font-size: 36px;
+    color: #fff;
+    margin-right: 30px;
+    opacity: 0.8;
+}
+
+.menugithub {
+    background-color: #181717;
+    grid-area: "github";
+}
+
+.menugithub:hover {
+    text-shadow: 0 0 4px #fff;
+    opacity: 1;
+}
+
+
+.menulinkedin {
+    background-color: #0077B5;
+    grid-area: "linkedin";
+}
+
+.menulinkedin:hover {
+    text-shadow: 0 0 4px #fff;
+    opacity: 1;
+}
+
+.menuinstagram {
+    background: linear-gradient(45deg, #833AB4, #E1306C);
+    grid-area: "instagram";
+}
+
+.menuinstagram:hover {
+    text-shadow: 0 0 4px #fff;
+    opacity: 1;
+}
+
+.menuwhatsapp {
+    background-color: #00bb2d;
+    grid-area: "whatsapp";
+}
+
+.menuwhatsapp:hover {
+    text-shadow: 0 0 4px #fff;
+    opacity: 1;
+}
+
+@media screen and (min-width: 1120px) {
+
+    nav.open {
+        transform: rotate(90deg);
+        height: 100vw;
+    
+    }
+
+    .menu {
+        transform: rotate(-90deg);
+        width: calc(100vh - 104px);
+        height: calc(100vw - 520px);
+    }
+
+    .menu-links {
+
+        transform: rotate(180deg);
+        width: calc(100vh - 104px);
+    }
+
+    .menu-links li {
+        height: 130px;
+    }
+
+    .menu-links li a h3 {
+        font-size: 56px;
+        letter-spacing: 2px;
+        margin-left: 40px;
+    }
+    
+    .menu-links li a i {
+        font-size: 72px;
+        margin-right: 40px;
+        transform: rotate(90deg);
+    }
+
+    .menu li {
+        width: 300px;
+        margin: 16px 0;
+        font-size: 56px;
+      }
+
+}
+
+
+
+  
