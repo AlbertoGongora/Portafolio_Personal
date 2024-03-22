@@ -1,0 +1,100 @@
+@import "CarroselProjects.css";
+
+/* pestaña de texto */
+
+:root {  
+    --purple: rgb(89, 164, 255);
+    --violet: rgb(0, 85, 255);
+    --pink: rgb(219, 31, 106); 
+    --fs: 4rem;
+  }
+  
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  @keyframes scale {
+    from, to {
+      transform: scale(0);
+    } 
+    50% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    } 
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  
+  .card-text {
+    background-image: url(../../../../assets/roto1.jpg);
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+  
+    
+  
+  }
+  
+  .title-card-text {
+
+    font-family: "Rubik", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 150px 95px;
+  }
+  
+  .title-card-text > .magic {
+    display: inline-block;
+  }
+  
+  .title-card-text > .magic > .magic-star {
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+    --size: clamp(60px, 1.5vw, 30px);
+    animation: scale 700ms ease forwards;
+  }
+  
+  .title-card-text > .magic > .magic-star > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  .title-card-text > .magic > .magic-star > svg > path {
+    fill: var(--pink);
+  }
+  
+  .title-card-text > .magic > .magic-text {
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    white-space: nowrap;
+    font-weight: 800;
+    font-size: var(--fs);
+  }
+  
+  

@@ -4,63 +4,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 
 }
-/* Estilos de los TOOLINGS */
-.toolings-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.toolings-title {
-    font-size: 32px;
-    
-    align-self: center;
-    margin: 32px;
-    border: 2px solid #87A922;
-    border-radius: 8px;
-    padding: 4px 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
-    color: #87A922;
-    text-shadow:  0 0 5px #87A922;
-}
-
-.toolings-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    background-color: #87A922;
-    padding: 24px;
-    margin-bottom: 64px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px #87A922;
-}
-
-.toolings-list li {
-    width: 148px;
-    list-style: none;
-    font-size: 16px;
-    gap: 12px;
-    display: flex;
-    align-items: center;
-    background-color: #302d2d;
-    border-radius: 8px;
-    padding: 8px 12px;
-    box-shadow: 0 0 5px #302d2d;
-
-}
-
-.toolings-list li i {
-    width: 25px;
-    font-size: 20px;
-    margin-left: 6px;
-    color: #87A922;
-}
 
 /* Estilos del SHOWROOM */
-
 .showroom-container {
     display: flex;
     flex-direction: column;
@@ -68,9 +13,9 @@ body {
 }
 
 .showroom-title {
-    font-size: 32px;
+    font-size: 40px;
     align-self: center;
-    margin: 64px 0 32px 0;
+    margin: 64px 0 16px 0;
     border: 2px solid #87A922;
     border-radius: 8px;
     padding: 4px 8px;
@@ -202,6 +147,10 @@ body {
 }
 
 @media screen and (min-width: 600px) {
+    .toolings-title {
+        margin-bottom: 72px;
+    }
+
     .toolings-list {
         grid-template-columns: repeat(3, 1fr);
 

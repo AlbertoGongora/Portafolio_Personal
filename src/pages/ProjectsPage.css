@@ -1,8 +1,46 @@
+.about-container {
+ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-Direction: column; 
+    justify-Content: center;
+    align-Items: center; 
+    margin-bottom: 120px;
+}
+
+.about-title {
+    font-size: 36px;
+    align-self: center;
+    margin: 64px 0 0 0;
+    border-radius: 8px;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #87A922;
+    text-shadow:  0 0 5px #87A922;
+}
+
+.about-text {
+    align-self: center;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+
+    margin: 32px 0 32px 0;
+    border-radius: 8px;
+    padding: 4px 8px;
+  
+    color: #87A922;
+}
+
+
 .home-button {
     text-decoration: none;
     font-size: 32px;
     align-self: center;
-    margin-top: 32px;
+    margin: 32px;
     padding: 8px 10px;
     border: 2px solid #87A922;
     border-radius: 8px;

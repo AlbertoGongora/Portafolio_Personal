@@ -1,0 +1,151 @@
+
+
+.card-turn-body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../../../../assets/roto2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card-turn {
+    width: 320px;
+    cursor: pointer;
+    transform: translate(42%, 10%);
+  }
+  
+  .card-content-turn {
+    position: relative;
+    transform-style: preserve-3d;
+    height: 320px;
+    width: 320px;
+    object-position: left;
+    transition: 5s;
+    /* animation: turn 12s linear infinite;  */
+  }
+  
+  /* @keyframes turn {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(360deg); 
+    }
+  } */
+
+  .card-turn:hover .card-content-turn {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+  }
+  
+  .card-front,
+  .card-back {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    color: white;
+  }
+  
+  .card-front {
+    background-image: url(../../../../assets/proyectos.png);
+    align-items: center;
+  }
+  
+  .card-front::before {
+    content: "";
+    position: absolute;
+    inset: 0.75rem; /* Reduce el espacio del borde */
+    border: 2px solid yellow;
+    border-radius: 50%;
+    transform: translateZ(1.5rem);
+  }
+  
+  .card-back::before {
+    content: "";
+    position: absolute;
+    inset: 0.75rem; /* Reduce el espacio del borde */
+    border: 2px solid yellow;
+    border-radius: 50%;
+    transform: translateZ(1.5rem);
+  }
+  
+  .title-turn {
+    font-family: "Teko", sans-serif;
+    font-size: 2.5rem; /* Reduce el tamaño del título para adaptarse al nuevo tamaño */
+    text-transform: uppercase;
+    line-height: 1; /* Evita el espacio adicional debajo del título */
+    transform: translateZ(2rem);
+  }
+  
+  .sub-title {
+    font-size: 0.75rem; /* Reduce el tamaño del subtítulo para adaptarse al nuevo tamaño */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Reduce el espaciado entre letras */
+    transform: translateZ(1.5rem);
+  }
+  
+  .text-front {
+    text-shadow: yellow 1px 0 5px; /* Reduce el desenfoque de la sombra */
+    color: #1a1a1a;
+  }
+  
+  .upDown {
+    margin-bottom: 50px; /* Reduce el espacio entre el subtítulo y los bordes */
+    padding: 0.25rem 0.5rem; /* Reduce el espacio alrededor del subtítulo */
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px; /* Reduce el radio de borde */
+    box-shadow: yellow 1px 0 5px; /* Reduce la intensidad de la sombra */
+  }
+  
+  .card-back {
+    border-radius: 50%;
+    background-color: #551010;
+    transform: rotateY(180deg);
+    gap: 0.25rem;
+  }
+  
+  .back-title {
+    font-family: "Teko", sans-serif;
+    font-size: 1.5rem; /* Reduce el tamaño del título en la parte posterior para adaptarse al nuevo tamaño */
+    font-weight: 600;
+    color: yellow;
+    text-transform: uppercase;
+    align-self: center;
+    transform: translateZ(2rem);
+  }
+  
+  .card-back span {
+    font-weight: 600;
+    color: yellow;
+  }
+  
+  .text-back {
+    font-size: 0.75rem; /* Reduce el tamaño del texto en la parte posterior para adaptarse al nuevo tamaño */
+    line-height: 1.5;
+    text-align: justify;
+    transform: translateZ(2rem);
+    margin: 0 1rem;
+  }
+  
+  .release-date {
+    margin-bottom: 1.2rem;
+  }
+  
+  

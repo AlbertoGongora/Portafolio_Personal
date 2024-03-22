@@ -1,0 +1,19 @@
+@import "CarroselProjects.css";
+/* imagen presetacion 3d */
+
+/* Modifica .card-dinamic para que se ajuste al nuevo tamaño de la tarjeta */
+
+.card-dinamic {
+    background-color: #1a1a1a;
+  }
+  
+  .img-card-dinamic {
+    background-image: url(../../../../assets/dinamicCard.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 330px;
+    margin: 20px 140px 0 140px; 
+    
+  
+  }

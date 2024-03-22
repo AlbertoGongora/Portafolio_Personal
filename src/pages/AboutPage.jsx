@@ -4,10 +4,10 @@ import "./AboutPage.css";
 export function AboutPage() {
   return (
     <MainLayout>
-      <section style={{ width: "100%", height: "70vh", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+      <section className="about-container">
 
-      <h2 style={{ fontSize: "64px" }}>En construcción</h2>
-      <p style={{ fontSize: "36px" }}>En breve podras ver información sobre mi</p>
+      <h2 className="about-title">En construcción</h2>
+      <p className="about-text">En breve podras ver información sobre mi</p>
       <button onClick={() => window.location.href = "/"} className="home-button">Home</button>
       </section>
     </MainLayout>
