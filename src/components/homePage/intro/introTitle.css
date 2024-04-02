@@ -9,8 +9,8 @@
 .intro-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
-    margin-bottom: 32px;
+    height: calc(100vh - 104px);
+
 
 }
 
@@ -123,15 +123,10 @@
 @media screen and (min-width: 1120px) {
     .intro-container {
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
     }
     .intro-title-container {
         width: 100%;
-        margin-bottom: 180px;
-        margin-left: 40px;
-        margin-right: -50px;
-
+        margin: 96px -50px 180px 40px;
     }
 
     .intro-title {

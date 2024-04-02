@@ -5,18 +5,21 @@ import "./toolings.css";
 export const Toolings = () => {
   const [isToolingTitleVisible, setIsToolingTitleVisible] = useState(false);
   const [isToolingListVisible, setIsToolingListVisible] = useState(false);
+  const [isToolingParrafVisible, setIsToolingParrafVisible] = useState(false);
   const { ref: titleRef, inView: titleIsVisible } = useInView({ threshold: 0.5 });
   const { ref: listRef, inView: listIsVisible } = useInView({ threshold: 0.5 });
+  const { ref: parrafRef, inView: parrafIsVisible } = useInView({ threshold: 0.5 });
   const listItemsRefs = useRef([]);
 
   useEffect(() => {
     if (titleIsVisible) setIsToolingTitleVisible(true);
     if (listIsVisible) setIsToolingListVisible(true);
-  }, [titleIsVisible, listIsVisible]);
+    if (parrafIsVisible) setIsToolingParrafVisible(true);
+  }, [titleIsVisible, listIsVisible, parrafIsVisible]);
 
   return (
-    <section className="toolings-container text-flicker">
-      <h3 ref={titleRef} className={`toolings-title text-flicker ${isToolingTitleVisible ? 'animate-your-effect-title' : 'elemNotVisible'}`}>TOOLINGS</h3>
+    <section className="toolings-container">
+      <h3 ref={titleRef} className={`toolings-title ${isToolingTitleVisible ? 'animate-your-effect-title' : 'elemNotVisible'}`}>TOOLS</h3>
       <ul ref={listRef} className={`toolings-list ${isToolingListVisible ? 'animate-your-effect-container' : 'elemNotVisible'}`}>
         {toolings.map((tooling, index) => {
           
@@ -36,6 +39,7 @@ export const Toolings = () => {
           );
         })}
       </ul>
+      <p ref={parrafRef} className={`toolings-parraf ${isToolingParrafVisible ? 'animate-fade-in' : 'elemNotVisible'}`}>Estas son las herramientas con las que he trabajado y las que domino.</p>
     </section>
   );
   
