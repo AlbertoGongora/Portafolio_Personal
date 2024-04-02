@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MenuLinks } from './MenuLinks.jsx';
+import { Link } from 'react-router-dom';
 import './ButtonNavToggle.css';
 
 export const ButtonNavToggle = () => {
@@ -30,13 +31,13 @@ export const ButtonNavToggle = () => {
             <nav className={menuClass} >
                     <ul className="menu">
                         <li className="menu-home">
-                            <a href="/">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li className="menu-about">
-                            <a href="/aboutme">About</a>
+                            <Link to="/aboutme">About</Link>
                         </li>
                         <li className="menu-projects">
-                            <a href="/projects">Projects</a>
+                            <Link to="/projects">Projects</Link>
                         </li>
                     </ul>
                     <MenuLinks />
