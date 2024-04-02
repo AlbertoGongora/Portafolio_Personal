@@ -167,3 +167,11 @@
         --fs: 3rem;
     }
 }
+
+.title-card-mini{
+    color: ebece9;
+    font-size: 1.2rem;
+    z-index: 15;
+    transform: translate(15px, -65px);
+    cursor: default;
+}

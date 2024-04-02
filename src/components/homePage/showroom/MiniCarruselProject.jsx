@@ -22,18 +22,23 @@ export const MiniCarruselProject = () => {
 
                     <div className="slide first">
                         <Card3D contentStyle={cardContentStyle}/>
+                        <h3 className="title-card-mini">Card 3D</h3>
                     </div>
                     <div className="slide ">
                         <AnalogClock contentStyle={cardContentStyle}/>
+                        <h3 className="title-card-mini">Analog Clock</h3>
                     </div>
                     <div className="slide ">
                         <AnimationText contentStyle={cardContentStyle}/>
+                        <h3 className="title-card-mini">Animation Text</h3>
                     </div>
                     <div className="slide ">
                         <LoaderSpiral contentStyle={cardContentStyle}/>
+                        <h3 className="title-card-mini">Loading...</h3>
                     </div>
                     <div className="slide ">
                         <UserProfile contentStyle={cardContentStyle}/>
+                        <h3 className="title-card-mini">User Profile</h3>
                     </div>
 
                 </div>
