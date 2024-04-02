@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<HomePage />} />  {/* Eliminado "/Portafolio_Personal/" */}
+      <Route exact path="/" element={<HomePage />} />
       <Route path="/aboutme" element={<AboutPage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="*" element={<NotFoundPage />} />
