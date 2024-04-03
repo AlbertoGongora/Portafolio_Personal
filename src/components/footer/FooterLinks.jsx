@@ -21,7 +21,7 @@ export const FooterLinks = () => {
                 </a>
             </li>
             <li className="whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=+34637492305" target="_blank" rel="noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=637492305" target="_blank" rel="noreferrer">
                 <h3>Whatsapp</h3>
                 <i className="fab fa-whatsapp"></i>
             </a>
