@@ -55,5 +55,5 @@ const toolings = [
   { icon: "fa-brands fa-css3-alt", name: "CSS", numero: "siete" },
   { icon: "fa-brands fa-npm", name: "NPM", numero: "ocho" },
   { icon: "fa-brands fa-github", name: "GitHub", numero: "nueve" },
-  { icon: "fa-brands fa-slack", name: "Slack", numero: "diez", },
+  { icon: "fa-brands fa-figma", name: "Figma", numero: "diez", },
 ];
