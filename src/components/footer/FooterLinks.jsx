@@ -9,7 +9,7 @@ export const FooterLinks = () => {
                 </a>
             </li>
             <li className="linkedin">
-                <a href="https://www.linkedin.com/in/albertogongora/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/albertogongoragonzalez" target="_blank" rel="noreferrer">
                     <h3>LinkedIn</h3>
                     <i className="fab fa-linkedin"></i>
                 </a>

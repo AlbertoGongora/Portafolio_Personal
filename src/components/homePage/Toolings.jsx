@@ -33,27 +33,32 @@ export const Toolings = () => {
               ref={itemRef}
               className={`tooling-item ${isToolingListVisible ? 'animate-pop delay-2s' : ''} ${isToolingListVisible ? tooling.numero : ''}`}
             >
-              <i className={tooling.icon}></i>
+              <img src={tooling.icon} alt={tooling.name} className="tooling-icon" />
               <p>{tooling.name}</p>
             </li>
           );
         })}
       </ul>
-      <p ref={parrafRef} className={`toolings-parraf ${isToolingParrafVisible ? 'animate-fade-in' : 'elemNotVisible'}`}>Estas son las herramientas con las que he trabajado y las que domino.</p>
+      <p ref={parrafRef} className={`toolings-parraf ${isToolingParrafVisible ? 'animate-fade-in' : 'elemNotVisible'}`}>Estas son las herramientas que domino. Actualmente, estoy en proceso de aprender TypeScript e integrar Sass en mis proyectos. Además, tengo conocimientos en herramientas de gestión como Trello.</p>
     </section>
   );
   
 };
 
 const toolings = [
-  { icon: "fa-brands fa-js", name: "JavaScript", numero: "uno" },
-  { icon: "fa-brands fa-react", name: "React", numero: "dos" },
-  { icon: "fa-brands fa-node", name: "Node", numero: "tres" },
-  { icon: "fa-brands fa-node-js", name: "Express", numero: "cuatro" },
-  { icon: "fa-solid fa-database", name: "MySQL", numero: "cinco" },
-  { icon: "fa-brands fa-html5", name: "HTML", numero: "seis" },
-  { icon: "fa-brands fa-css3-alt", name: "CSS", numero: "siete" },
-  { icon: "fa-brands fa-npm", name: "NPM", numero: "ocho" },
-  { icon: "fa-brands fa-github", name: "GitHub", numero: "nueve" },
-  { icon: "fa-brands fa-slack", name: "Slack", numero: "diez", },
+  { icon: "/svg/html5.svg", name: "HTML", numero: "uno" },
+  { icon: "/svg/css.svg", name: "CSS", numero: "dos" },
+  { icon: "/svg/javascript.svg", name: "JavaScript", numero: "tres" },
+  { icon: "/svg/react.svg", name: "React", numero: "cuatro" },
+  { icon: "/svg/nodejs.svg", name: "Node.js", numero: "cinco" },
+  { icon: "/svg/Express.js_dark.svg", name: "Express", numero: "seis" },
+  { icon: "/svg/mongodb.svg", name: "MongoDB", numero: "siete" },
+  { icon: "/svg/mysql.svg", name: "MySQL", numero: "ocho" },
+  { icon: "/svg/npm.svg", name: "NPM", numero: "nueve" },
+  { icon: "/svg/git.svg", name: "Git", numero: "diez" },
+  { icon: "/svg/Github_dark.svg", name: "GitHub", numero: "once" },
+  { icon: "/svg/netlify.svg", name: "Netlify", numero: "doce" },
+  { icon: "/svg/Vercel_dark.svg", name: "Vercel", numero: "trece" },
+  { icon: "/svg/notion.svg", name: "Notion", numero: "catorce" },
+  { icon: "/svg/slack.svg", name: "Slack", numero: "quince" },
 ];

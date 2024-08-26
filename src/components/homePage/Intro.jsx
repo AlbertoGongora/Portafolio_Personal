@@ -30,10 +30,10 @@ export const Intro = () => {
             <div className="intro-title-container slide-in-left">
                 <h2 className="intro-title">Soy Alberto Góngora</h2>
                 <div className="container">
-                    <div className="top">Full Stack Developer</div>
-                    <div className="bottom" aria-hidden="true">Full Stack Developer</div>
+                    <div className="top">Frontend Developer</div>
+                    <div className="bottom" aria-hidden="true">Frontend Developer</div>
                 </div>
-                <p className="intro-text">Desarrollador de Frontend y Backend con ganas de aprender y crecer.</p>
+                <p className="intro-text">Desarrollador Frontend junior con ganas de aprender y crecer.</p>
             </div>
             <Presentacion3D className="slide-in-right" />
 
