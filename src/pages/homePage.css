@@ -139,13 +139,13 @@ body {
 /* Estilos para pantallas medianas (min-width: 600px) */
 @media screen and (min-width: 600px) {
     .quote-container {
-        width: 590px; /* Ensancha el contenedor de la cita en pantallas medianas */
+        width: 590px; 
     }
 }
 
 /* Estilos para pantallas grandes (min-width: 1120px) */
 @media screen and (min-width: 1120px) {
     .quote-container {
-        width: 590px; /* Mantiene el ancho del contenedor de la cita en pantallas grandes */
+        width: 590px; 
     }
 }
