@@ -1,14 +1,30 @@
 import { MainLayout } from "../layouts/MainLayout.jsx";
+import { GoHomeBtn } from "../components/buttons/goHomeBtn.jsx";
+import { Project } from "../components/projects/Project.jsx";
 import "./ProjectsPage.css";
 
 export function ProjectsPage() {
   return (
     <MainLayout>
-      <section className="about-container">
-
-      <h2 className="about-title">En construcción</h2>
-      <p className="about-text">En breve podras ver información sobre mi</p>
-      <button onClick={() => window.location.href = "/"} className="home-button">Home</button>
+      <section className="projectPage-container">
+        <h2 className="projectPage-title">Mis proyectos</h2>
+        <Project
+          image="/ImgProjects/pokedex.png"
+          title="Visualizador de Pokemóns"
+          paragraph="Buscador de Pokemóns por id o por nombre, y recreacion de una Pokedex con la informacion de cada uno de los pokemóns."
+          buttonText="Ver Más"
+          buttonLink="https://albertogongora.github.io/pokedex/"
+          sideProject="left"  
+        />
+        <Project
+          image="/ImgProjects/cosmic.png"
+          title="CRM Cosmic"
+          paragraph="Desarrollé el FrontEnd de CRM Cosmic, un sistema de gestión de clientes con React y Vite. Este es un video de presentación del proyecto, y pronto tendrán acceso a la aplicación completa."
+          buttonText="Ver Más"
+          buttonLink="https://youtu.be/fGAkeSnA72s"
+          sideProject="right"  
+        />
+        <GoHomeBtn />
       </section>
     </MainLayout>
   );
