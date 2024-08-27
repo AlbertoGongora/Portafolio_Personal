@@ -1,4 +1,4 @@
-import { GoHomeBtn } from "../components/buttons/goHomeBtn.jsx";
+import { GoToBtn } from "../components/buttons/goToBtn.jsx";
 import { MainLayout } from "../layouts/MainLayout.jsx";
 import "./AboutPage.css";
 
@@ -9,7 +9,7 @@ export function AboutPage() {
 
       <h2 className="about-title">En construcción</h2>
       <p className="about-text">En breve podras ver información sobre mi</p>
-      <GoHomeBtn />
+      <GoToBtn location={"/"} text={"Home"} id={"home-button"} />
       </section>
     </MainLayout>
   );

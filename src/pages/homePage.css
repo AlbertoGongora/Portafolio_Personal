@@ -1,8 +1,8 @@
+/* Estilos básicos para móviles (por defecto) */
 body {
     background-color: #302d2d;
     color: #ebece9;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 /* Estilos del SHOWROOM */
@@ -27,20 +27,11 @@ body {
     text-shadow:  0 0 5px #87A922;
 }
 
-.showroom-text {
-    font-size: 16px;
-    margin-bottom: 32px;
-    background-color: #87A922;
-    padding: 12px 8px;
-    border-radius: 8px;
-    box-shadow: 0 0 5px #87A922;
-}
-
 .showroom-span:hover {
     color: #302d2d;
 }
 
-.showroom-button {
+#showroom-button {
     font-size: 32px;
     align-self: center;
     margin-bottom: 32px;
@@ -52,15 +43,15 @@ body {
     box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
     text-shadow:  0 0 5px #87A922;
     background-color: #302d2d;
+    transition: all 0.3s ease;
 }
 
-.showroom-button:hover {
+#showroom-button:hover {
     color: #302d2d;
     background-color: #87A922;
 }
 
 /* Estilos de descarga de CV */
-
 .download-cv {
     display: flex;
     flex-direction: column;
@@ -82,7 +73,7 @@ body {
     text-shadow:  0 0 5px #87A922;
 }
 
-.download-cv-button {
+#download-cv-button {
     text-decoration: none;
     font-size: 32px;
     align-self: center;
@@ -95,16 +86,15 @@ body {
     box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
     text-shadow:  0 0 5px #87A922;
     background-color: #302d2d;
+    transition: all 0.3s ease;
 }
 
-.download-cv-button:hover {
-
+#download-cv-button:hover {
     color: #302d2d;
     background-color: #87A922;
 }
 
 /* Estilo de la cita */
-
 .quote-container {
     display: flex;
     flex-direction: column;
@@ -118,13 +108,13 @@ body {
 
 .quote-text {
     font-size: 24px;
-    margin: 0 4px;
+    margin: 0 20px;
     font-style: italic;
     line-height: 1.5;
-
 }
 
 .quote-author {
+    margin-right: 20px;
     text-align: right;
 }
 
@@ -146,54 +136,16 @@ body {
     right: 24px;
 }
 
+/* Estilos para pantallas medianas (min-width: 600px) */
 @media screen and (min-width: 600px) {
-    .toolings-title {
-        margin-bottom: 72px;
-    }
-
-    .toolings-list {
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
-    .toolings-list li {
-        font-size: 20px;
-        width: 170px;
-    }
-
-    .toolings-list li i {
-        font-size: 24px;
-        margin-right: 8px;
-    }
-
-    .toolings-parraf {
-        max-width: 590px;
-        font-size: 24px;
-    }
-
     .quote-container {
-        width: 590px;
+        width: 590px; /* Ensancha el contenedor de la cita en pantallas medianas */
     }
 }
 
+/* Estilos para pantallas grandes (min-width: 1120px) */
 @media screen and (min-width: 1120px) {
-    .toolings-list {
-        grid-template-columns: repeat(5, 1fr);
-    }
-
-    .toolings-parraf {
-        max-width: 1112px;
-        font-size: 28px;
-    }
-
-    .toolings-list li {
-        font-size: 24px;
-        width: 200px;
-    }
-
-
-    .toolings-list li i {
-        font-size: 32px;
-        margin-right: 8px;
+    .quote-container {
+        width: 590px; /* Mantiene el ancho del contenedor de la cita en pantallas grandes */
     }
 }

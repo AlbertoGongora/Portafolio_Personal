@@ -1,5 +1,5 @@
 import { MainLayout } from "../layouts/MainLayout.jsx";
-import { GoHomeBtn } from "../components/buttons/goHomeBtn.jsx";
+import { GoToBtn } from "../components/buttons/goToBtn.jsx";
 import { Project } from "../components/projects/Project.jsx";
 import "./ProjectsPage.css";
 
@@ -24,7 +24,7 @@ export function ProjectsPage() {
           buttonLink="https://youtu.be/fGAkeSnA72s"
           sideProject="right"  
         />
-        <GoHomeBtn />
+        <GoToBtn location={"/"} text={"Home"} id={"home-button"} />
       </section>
     </MainLayout>
   );

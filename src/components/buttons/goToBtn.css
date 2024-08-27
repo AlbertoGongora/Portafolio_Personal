@@ -1,11 +1,11 @@
-.home-button {
+.goTobtn {
     text-decoration: none;
     font-size: 1.5rem;
     align-self: center;
-    margin: 32px;
+    margin-bottom: 2rem;
     padding: 8px 10px;
     border: 2px solid #87A922;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     color: #87A922;
     box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
@@ -17,7 +17,7 @@
     transition: all 0.3s ease;
 }
 
-.home-button:hover {
+.goTobtn:hover {
 
     color: #302d2d;
     background-color: #87A922;
