@@ -1,5 +1,4 @@
 import { MainLayout } from "../layouts/MainLayout.jsx";
-import { GoToBtn } from "../components/buttons/goToBtn.jsx";
 import { Project } from "../components/projects/Project.jsx";
 import "./ProjectsPage.css";
 
@@ -11,7 +10,7 @@ export function ProjectsPage() {
         <Project
           image="/ImgProjects/pokedex.png"
           title="Visualizador de Pokemóns"
-          paragraph="Buscador de Pokemóns por id o por nombre, y recreacion de una Pokedex con la informacion de cada uno de los pokemóns."
+          paragraph="Un buscador de Pokemóns por ID o nombre, que también recrea una Pokédex mostrando información detallada de cada Pokémon. Este proyecto fue desarrollado utilizando HTML, CSS, y JavaScript Vanilla."
           buttonText="Ver Más"
           buttonLink="https://albertogongora.github.io/pokedex/"
           sideProject="left"  
@@ -19,12 +18,11 @@ export function ProjectsPage() {
         <Project
           image="/ImgProjects/cosmic.png"
           title="CRM Cosmic"
-          paragraph="Desarrollé el FrontEnd de CRM Cosmic, un sistema de gestión de clientes con React y Vite. Este es un video de presentación del proyecto, y pronto tendrán acceso a la aplicación completa."
+          paragraph="Desarrollé el FrontEnd de CRM Cosmic, un sistema avanzado de gestión de clientes, utilizando React y Vite. Durante el desarrollo, creé librerías personalizadas para optimizar el rendimiento y mejorar la experiencia del usuario. El proyecto aún está en desarrollo, pero ya puedes ver un video de presentación, y pronto estará disponible la versión completa de la aplicación."
           buttonText="Ver Más"
           buttonLink="https://youtu.be/fGAkeSnA72s"
           sideProject="right"  
         />
-        <GoToBtn location={"/"} text={"Home"} id={"home-button"} />
       </section>
     </MainLayout>
   );

@@ -1,5 +1,8 @@
+/* Estilos para móviles (por defecto) */
 .project-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-content {
@@ -7,40 +10,43 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 50vw;
-    height: 65vh;
+    width: 100%;
     padding: 1.5rem;
 }
 
 .project-title,
 .project-text,
 .project-footer {
-    margin: 1.5rem;
+    margin: 1rem;
 }
 
 .project-title {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    text-align: center;
     color: #87A922;
-    text-shadow:  0 0 5px #87A922;
+    text-shadow: 0 0 5px #87A922;
 }
 
 .project-text {
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1rem;
+    text-align: justify;
     color: #ebece9;
-    text-shadow:  0 0 2px #000000;
+    text-shadow: 0 0 2px #000000;
 }
 
 .project-image {
-    width: 50vw;
-    height: 65vh;
+    width: 100%; 
+    height: auto; 
+    margin: 2rem 0 1rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    order: -1;
 }
 
 .project-image img {
-    width: 35vw;
+    width: 70vw; /* Ancho relativo para móviles */
+    height: auto; /* Mantiene la proporción */
     justify-content: center;
     align-items: center;
     border: solid 0.1px #87A922;
@@ -54,22 +60,76 @@
 }
 
 .left-image .img-left {
-    transform: perspective(1000px) rotateY(20deg) rotateX(10deg);
+    transform: perspective(62.5rem) rotateY(20deg) rotateX(10deg);
 }
 
 .left-image .img-left:hover {
-
-    transform: perspective(1800px) rotateY(-20deg) rotateX(10deg) scale(1.1) translatey(-10px);
+    transform: perspective(112.5rem) rotateY(-20deg) rotateX(10deg) scale(1.1) translateY(-0.625rem);
 }
 
 .right-image .img-right {
-    transform: perspective(1000px) rotateY(-20deg) rotateX(10deg);
+    transform: perspective(62.5rem) rotateY(-20deg) rotateX(10deg);
 }
 
 .right-image .img-right:hover {
-    transform: perspective(1800px) rotateY(20deg) rotateX(10deg) scale(1.1) translatey(10px);
+    transform: perspective(112.5rem) rotateY(20deg) rotateX(10deg) scale(1.1) translateY(0.625rem);
 }
 
+.project-button {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 2rem 0; /* Ajustado para móviles */
+    padding: 0.5rem 0.625rem;
+    border: 0.125rem solid #87A922;
+    border-radius: 0.5rem;
+    color: #87A922;
+    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922;
+    text-shadow: 0 0 5px #87A922;
+    background-color: #302d2d;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: buttonPulse 3s infinite;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.project-button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(135, 169, 34, 0.7);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    animation: pulseBorder 1.5s infinite;
+}
+
+.project-button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(135, 169, 34, 0.5);
+    transform: translate(-50%, -50%);
+    z-index: -2;
+    opacity: 0;
+    animation: pulseBorderSecondary 1.5s infinite 0.5s; 
+}
+
+.project-button:hover {
+    color: #ebece9;
+    background-color: #87A922;
+    text-shadow: 0 0 5px #000000;
+}
+
+/* Animaciones */
 @keyframes pulseBorder {
     0% {
         width: 100%;
@@ -111,60 +171,58 @@
     }
 }
 
-.project-button {
-    text-decoration: none;
-    font-size: 1.1rem;
-    align-self: center;
-    margin: 32px;
-    padding: 8px 10px;
-    border: 2px solid #87A922;
-    border-radius: 8px;
+/* Media Query para pantallas medianas (a partir de 600px) */
+@media screen and (min-width: 600px) {
+    .project-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-    color: #87A922;
-    box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922;
-    text-shadow: 0 0 5px #87A922;
-    background-color: #302d2d;
+    .project-content {
+        width: 50vw;
+        height: auto;
+    }
 
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-    animation: buttonPulse 3s infinite;
+    .project-title {
+        font-size: 1.3rem;
+    }
 
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+    .project-text {
+        font-size: 1.1rem;
+    }
+
+    .project-footer {
+        margin-top: 2rem;
+    }
+
+    .project-image {
+        width: 50vw;
+        height: auto;
+        order: 0;
+    }
+
+    .project-image img {
+        width: 40vw;
+    }
 }
 
-.project-button::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    border: 2px solid rgba(135, 169, 34, 0.7);
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    opacity: 0;
-    animation: pulseBorder 1.5s infinite;
-}
+/* Media Query para pantallas grandes (a partir de 1120px) */
+@media screen and (min-width: 1120px) {
+    .project-container {
+        display: flex;
+    }
 
-.project-button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-    border: 2px solid rgba(135, 169, 34, 0.5);
-    transform: translate(-50%, -50%);
-    z-index: -2;
-    opacity: 0;
-    animation: pulseBorderSecondary 1.5s infinite 0.5s; 
-}
+    .project-content {
+        width: 50vw;
 
-.project-button:hover {
-    color: #ebece9;
-    background-color: #87A922;
-    text-shadow: 0 0 5px #000000;
+    }
+
+    .project-image {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .project-image img {
+        width: 35vw;
+    }
 }

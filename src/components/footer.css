@@ -16,10 +16,11 @@ footer {
     border: 2px solid #87A922;
     border-radius: 8px;
     padding: 4px 8px;
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     transform: rotate(-2deg);
     box-shadow: 0 0 5px #87A922 inset, 0 0 5px #87A922; 
 }
@@ -178,6 +179,10 @@ footer {
     font-size: 14px;
     letter-spacing: 2px;
     color: #fff;
+}
+
+.footer-copyright p {
+    margin-left: 0.5rem;
 }
 
 @media screen and (min-width: 600px) {
