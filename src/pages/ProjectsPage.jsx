@@ -23,6 +23,22 @@ export function ProjectsPage() {
           buttonLink="https://youtu.be/fGAkeSnA72s"
           sideProject="right"  
         />
+        <Project
+          image="/ImgProjects/profileCard.png"
+          title="TypeScript & SASS Project"
+          paragraph="Proyecto que integra TypeScript y SASS, desplegado manualmente en Vercel. Este proceso me permitió profundizar en la configuración del despliegue y optimizar el flujo de trabajo desde la terminal."
+          buttonText="Ver más"
+          buttonLink="https://type-script-sass-dbisw6wep-devcodefoxs-projects.vercel.app/"
+          sideProject="left"
+        />
+        <Project
+          image="/ImgProjects/insta.png"
+          title="¡Sígueme en Instagram!"
+          paragraph="Si te interesa ver más proyectos, componentes y contenido relacionado con el desarrollo, te invito a seguirme en Instagram. Haz clic en el siguiente enlace para estar al tanto de mis últimas creaciones y novedades. ¡Gracias por visitar mi perfil!"
+          buttonText="Ver más"
+          buttonLink="https://www.instagram.com/devcodefox/"
+          sideProject="right"
+        />
       </section>
     </MainLayout>
   );
